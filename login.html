@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memes lovers || Login-Signup</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="scripts/supabase-config.js"></script>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/login.css">
+  <script src="scripts/lite.js"></script>
+  
+</head>
+
+<body>
+  <div class="input_container">
+    <div class="login">
+      <h3>
+        Login
+      </h3>
+      <form action="#">
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <button type="submit">Login</button>
+        
+        <div class="new_user">
+          <p>Are you new here?</p> <a href="javascript:void(0)">Sign up</a>
+        </div>
+      </form>
+    </div>
+    <div class="signup">
+      <h3>
+        Signup
+      </h3>
+      <form action="#">
+        <input type="text" placeholder="First name" name="first_name" required>
+        <input type="text" placeholder="Second name" name="second_name" required>
+        <input type="text" placeholder="Username e.g Memes TV" name="username" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="password" placeholder="Password" minlength="3" name="password" required>
+        <button type="submit">Signup</button>
+        <div class="old_user">
+          <p>Are you here before?</p>
+          <a href="javascript:void(0)">Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="scripts/login.js"></script>
+</body>
+
+</html>

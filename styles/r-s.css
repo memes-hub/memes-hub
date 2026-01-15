@@ -1,0 +1,42 @@
+@import url("/styles/style.css");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.success_message_wrapper {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--_p_clr);
+  line-height: 40px;
+  border-radius: 35px;
+}
+.success_icon {
+  height: 100px;
+  width: 100px;
+  background: #58D59B;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--_p_clr);
+  box-shadow: 5px 0 5px #45BA85;
+}
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+a {
+  padding: 10px;
+  background: var(--_t_clr);
+  border-radius: 15px;
+  text-decoration: none;
+  color: var(--_p_clr);
+}

@@ -1,0 +1,151 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input_container {
+  width: 300px;
+  height: 500px;
+  background: var(--_p_clr);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  transition: all 1.5s;
+  
+}
+.login h3 {
+  user-select: none;
+  width: 100%;
+  height: 50px;
+  font-size: 1.5em;
+  background: var(--_t_clr);
+  color: var(--_p_clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-100px, 20px) rotate(-45deg);
+}
+.login form {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.login input {
+  height: 40px;
+  width: 250px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all .5s;
+}
+input:focus {
+  outline: .5px var(--_t_clr) solid;
+}
+.login button {
+  height: 40px;
+  width: 250px;
+  border: none;
+  color: var(--_p_clr);
+  background: var(--_t_clr);
+  border-radius: 10px;
+}
+.new_user {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.new_user a, .old_user a {
+  padding: 5px;
+  background: var(--_t_clr);
+  color: var(--_p_clr);
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--_t_clr);
+}
+.signup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  display: none;
+  transform: scale(0);
+  transition: all 1.5s;
+  opacity: 0;
+}
+.signup h3 {
+  width: 100%;
+  height: 50px;
+  background: var(--_t_clr);
+  color: var(--_p_clr);
+  font-size: 1.5em;
+  padding: 5px;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(90px, 20px) rotate(45deg);
+}
+.signup form {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+.signup input {
+  height: 40px;
+  width: 250px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.signup input:focus {
+  outline: solid var(--_t_clr) .5px;
+}
+.signup button {
+  height: 40px;
+  width: 250px;
+  background: var(--_t_clr);
+  color: var(--_p_clr);
+  border: none;
+  border-radius: 10px;
+}
+.old_user {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+input:user-valid{
+  box-shadow: 0 0 5px var(--_t_clr);
+  background: var(--_p_clr);
+}
+.login_deactivate {
+  transform: rotate(360deg) scale(0);
+  opacity: 0;
+}
+.signup_activated {
+  transform: scale(1) rotate(-360deg);
+  opacity: 1;
+}

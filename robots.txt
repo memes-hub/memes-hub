@@ -1,0 +1,6 @@
+# Allow all crawlers to access the site
+User-agent: *
+Allow: /
+
+# Point the crawlers to your sitemap
+Sitemap: https://memes-lovers.netlify.app/sitemap.xml

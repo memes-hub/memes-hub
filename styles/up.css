@@ -1,0 +1,204 @@
+header {
+  height: 50px;
+  background: var(--_p_clr);
+  display: flex;
+}
+
+.settings_bar {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  border-radius: 10px;
+  gap: 5px;
+}
+
+.dots {
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  background: #fff;
+  border: 1px solid var(--_t_clr);
+}
+
+.user_name {
+  font-size: 1em;
+}
+
+.user_dashboard {
+  width: 100%;
+  margin-top: 60px;
+  display: grid;
+  place-items: center;
+  gap: 40px;
+}
+
+.user_profile_settings {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.user_profile {
+  width: 100%;
+  height: 150px;
+  background: var(--_p_clr);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  align-items: center;
+}
+ .user_profile img {
+   height: 100%;
+   width: 50%;
+   background: #fff;
+   border-radius: 10%;
+   object-fit: cover;
+ }
+.profile_input {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile_input label , .profile_input button{
+  padding: 10px;
+  background: var(--_t_clr);
+  border-radius: 5px;
+  color: var(--_p_clr);
+  border: none;
+}
+.user_details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.name {
+  height: max-content;
+  width: max-content;
+  background: var(--_p_clr);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 20px 5px 20px 5px;
+  overflow: hidden;
+  
+}
+.name span:nth-child(1) {
+  width: max-content;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+.name span:nth-child(2) {
+  width: max-content;
+  padding: 10px;
+  color: var(--_p_clr);
+  border-radius: 10px;
+  background: var(--_t_clr);
+}
+.user_posted_contents {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 15px;
+}
+.posted_meme_card {
+  height: 350px;
+  width: 300px;
+  background: var(--_p_clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 .5px var(--_s_clr);
+}
+.posted_meme_card img {
+  width: 295px;
+  height: 300px;
+}
+.upload_details {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.delete_post {
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  background: var(--_t_clr);
+}
+.delete_post svg  {
+  height: 20px;
+  width: 20px;
+  fill: var(--_p_clr);
+}
+.dd {
+  height: 150px;
+  width: 150px;
+  position: fixed;
+  background: var(--_p_clr);
+  z-index: 5000;
+  right: 0;
+  overflow: auto;
+  transition: all .5s;
+  transform: translateY(-10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.dd button{
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  color: var(--_t_clr);
+  font-weight: bold;
+  box-shadow: 0 0 3px var(--_t_clr);
+}
+button {
+  cursor: pointer;
+}
+.user_profile input {
+  display: none;
+}
+
+.save_details {
+  width: 250px;
+  height: 40px;
+  border: none;
+  color: var(--_p_clr);
+  background: var(--_t_clr);
+  border-radius: 5px;
+}
+.no_posts {
+  font-size: 3rem;
+  text-align: center;
+  color: #ddd;
+}

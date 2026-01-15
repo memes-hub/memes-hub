@@ -1,0 +1,43 @@
+@import url("/styles/style.css");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form {
+  height: 400px;
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 15px;
+  background: var(--_p_clr);
+  padding: 10px;
+}
+input {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+textarea {
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+button {
+  height: 50px;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  background: var(--_t_clr);
+  font-size: 1.2em;
+}

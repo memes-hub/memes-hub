@@ -1,0 +1,87 @@
+
+.shake {
+  animation: shakeFrame .1s linear 5;
+}
+
+.bounce {
+  animation: bounceFrame .1s linear 5;
+}
+
+.highlight {
+  animation: highlightFrame .1s linear 3;
+}
+
+.pulsate {
+  animation: pulsateFrame .1s linear 5;
+}
+
+.glaze {
+  position: relative;
+  overflow: hidden;
+}
+
+.glaze::after {
+  place-self: center!important;
+  content: '';
+  position: absolute;
+  background: linear-gradient(45deg, transparent, #C5CFEE, transparent);
+  animation: glazeFrame .1s linear 3;
+  background-blend-mode: multiply;
+  width: inherit;
+  height: inherit;
+}
+
+@keyframes shakeFrame {
+  from {
+    transform: translate(-10px);
+  }
+  
+  to {
+    transform: translate(10px);
+    
+  }
+}
+
+@keyframes bounceFrame {
+  from {
+    transform: translateY(-10px);
+    
+  }
+  
+  to {
+    transform: translateY(10px);
+    
+  }
+}
+
+@keyframes highlightFrame {
+  from {
+    background: #64D47B;
+  }
+  
+  to {
+    background: initial;
+  }
+}
+
+@keyframes pulsateFrame {
+  from {
+    opacity: 0;
+    transform: scale(.8);
+  }
+  
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes glazeFrame {
+  from {
+    background-position: -10px;
+  }
+  
+  to {
+    background-position: 0;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Memeslovers | user profile</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="scripts/supabase-config.js"></script>
+  
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="/styles/user_profile.css">
+  <link rel="stylesheet" href="/lite.css">
+  <script src="/scripts/lite.js"></script>
+  
+</head>
+
+<body>
+  <header>
+    <a href="/index.html">Go Home</a>
+    <div class="settings_bar">
+      <div class="dots"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
+    </div>
+  </header>
+  <div class="dd">
+    <button onclick="window.open('/upload.html')">Upload</button>
+    <button>Logout</button>
+    <button>Deactivate</button>
+  </div>
+  <div class="user_dashboard">
+    <div class="user_profile_settings">
+      <div class="user_profile">
+        <img src="/assets/Icons/person.svg" alt="profile picture">
+        <div class="profile_input">
+          <input type="file" id="profile_picture" name="profile_picture" accept="image/*">
+          <label for="profile_picture">Change picture</label>
+          <button type="button">Delete picture</button>
+        </div>
+      </div>
+      <div class="user_details">
+        <div class="name">
+          <span>First name</span>
+          <span contenteditable>Loading...</span>
+        </div>
+        <div class="name">
+          <span>Second name</span>
+          <span contenteditable>Loading...</span>
+        </div>
+        <div class="name">
+          <span>Email</span>
+          <span contenteditable>Loading...</span>
+        </div>
+        <div class="name">
+          <span>Username</span>
+          <span contenteditable>Loading...</span>
+        </div>
+      </div>
+      <button class="save_details">
+        Save Changes
+      </button>
+    </div>
+    
+    <div class="user_posted_contents">
+      <h1>
+        Your Uploads
+      </h1>
+      <div class="no_posts">
+        Your Uploads Comes Here
+      </div>
+      <!-- <div class="posted_meme_card">
+        <img src="/assets/images/FB_IMG_17670541429652776.jpg" alt="uploaded_image">
+        <div class="upload_details">
+          <div class="likes">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+            </svg>
+            <div class="count">200</div>
+          </div>
+          
+          <div class="download">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+            </svg>
+            <div class="count">
+              200
+            </div>
+          </div>
+          <div class="reports">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+              <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
+            </svg>
+            <div class="count">200</div>
+          </div>
+          <button class="delete_post">
+            <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="109.484px" height="122.88px" viewBox="0 0 109.484 122.88" enable-background="new 0 0 109.484 122.88" xml:space="preserve">
+              <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.347,9.633h38.297V3.76c0-2.068,1.689-3.76,3.76-3.76h21.144 c2.07,0,3.76,1.691,3.76,3.76v5.874h37.83c1.293,0,2.347,1.057,2.347,2.349v11.514H0V11.982C0,10.69,1.055,9.633,2.347,9.633 L2.347,9.633z M8.69,29.605h92.921c1.937,0,3.696,1.599,3.521,3.524l-7.864,86.229c-0.174,1.926-1.59,3.521-3.523,3.521h-77.3 c-1.934,0-3.352-1.592-3.524-3.521L5.166,33.129C4.994,31.197,6.751,29.605,8.69,29.605L8.69,29.605z M69.077,42.998h9.866v65.314 h-9.866V42.998L69.077,42.998z M30.072,42.998h9.867v65.314h-9.867V42.998L30.072,42.998z M49.572,42.998h9.869v65.314h-9.869 V42.998L49.572,42.998z" />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <script src="/scripts/user_profile.js"></script>
+</body>
+
+</html>
